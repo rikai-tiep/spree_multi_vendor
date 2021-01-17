@@ -7,7 +7,7 @@ Deface::Override.new(
 Deface::Override.new(
   virtual_path:  'spree/admin/shared/_main_menu',
   name:          'vendors_main_menu_tabs',
-  insert_after: 'nav#users-nav',
+  insert_after: '#users-nav',
   text:       <<-HTML
                 <% if current_spree_user.respond_to?(:has_spree_role?) && current_spree_user.has_spree_role?(:admin) %>
                   <ul class="nav nav-sidebar border-bottom">
